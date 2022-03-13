@@ -1,4 +1,4 @@
-https://newsapi.org/
+Powered by https://newsapi.org/
 
 MADE by: Anshul Tyagi (anshultyagi90@gmail.com)
 
