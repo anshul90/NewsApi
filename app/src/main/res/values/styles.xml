@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--color effects, EditText, RadioButtons...-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--color effects, radio buttons-->
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <!--app default background color-->
+        <item name="android:windowBackground">@color/appBackground</item>
+        <item name="android:textColor">@color/textLabels</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorHint">@color/subTextLabels</item>
+        <!--color effects, TextInputLayout...-->
+        <item name="textInputStyle">@style/Til</item>
+        <!--material dialog-->
+        <item name="materialAlertDialogTheme">@style/AlertDialogMaterialTheme</item>
+
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+
+        <!--material button-->
+        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button.AppTheme</item>
+    </style>
+
+    <!-- region dialog   -->
+    <style name="AlertDialogMaterialTheme" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="materialAlertDialogTitleTextStyle">@style/TitleTextStyle</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/BodyTextStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Alert.Button.Negative</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/textLabels</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BodyTextStyle" parent="MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textColor">@color/textLabels</item>
+    </style>
+
+    <style name="Alert.Button.Positive" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Alert.Button.Negative" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+    <!--endregion-->
+
+    <!-- region text input layout -->
+    <style name="Til" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="helperTextTextAppearance">@style/TilHelperTextTheme</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="boxCornerRadiusBottomEnd">5dp</item>
+        <item name="boxCornerRadiusBottomStart">5dp</item>
+        <item name="boxCornerRadiusTopStart">5dp</item>
+        <item name="boxCornerRadiusTopEnd">5dp</item>
+    </style>
+
+    <style name="TilHelperTextTheme" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColorHint">@color/subTextLabels</item>
+    </style>
+    <!--endregion-->
+
+    <style name="CollapsedAppBar" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ExpandedAppBar" parent="TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <!--region material button -->
+    <style name="Widget.MaterialComponents.Button.AppTheme">
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">@dimen/font_action</item>
+        <item name="android:letterSpacing">0.0</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="rippleColor">@color/colorAccent</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="backgroundTint">@color/appBackground</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.AppTheme.Accent">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="android:lines">1</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">@dimen/font_header</item>
+        <item name="backgroundTint">@android:color/holo_blue_dark</item>
+    </style>
+
+    <style name="Widget.MaterialComponents.Button.AppTheme.Accent.Red">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="android:lines">1</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">@dimen/font_header</item>
+        <item name="backgroundTint">@android:color/holo_red_dark</item>
+    </style>
+    <!--endregion-->
+</resources>

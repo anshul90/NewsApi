@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="app_name_breaking_news">Breaking News</string>
+    <string name="app_name_top_headlines">Top Headlines</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_internet">There is no internet connection</string>
+    <string name="item_image">Item Image</string>
+    <string name="source">Source</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="published_at">Published At</string>
+    <string name="button_title_back">"Back"</string>
+    <string name="continue_to_login">Continue to login</string>
+    <string name="more_details"><u>More details</u></string>
+    <string name="build_title">Version</string>
+</resources>
